@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.neusoft.mapper.UserMapper"> 
+   <!-- select映射的查找 -->
+   <select id="findUserByName" parameterType="user" resultType="user">
+       select * from user where username=#{username}
+   </select> 
+   
+   <!-- select映射的查找 -->
+   <select id="findUserByQueryEntity" parameterType="QueryEntity" resultType="user">
+       select * from user where username=#{userExtend.username}
+   </select> 
+</mapper>
