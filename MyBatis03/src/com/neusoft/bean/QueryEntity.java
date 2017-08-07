@@ -9,6 +9,6 @@ public class QueryEntity {
 
 	public void setUserExtend(UserExtend userExtend) {
 		this.userExtend = userExtend;
-		/////////
+
 	}
 }
